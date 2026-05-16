@@ -1,0 +1,16 @@
+---
+description: Visic landing page conventions — sections, tokens, Figma-aligned patterns.
+globs: "**/*.{ts,tsx,css}"
+alwaysApply: false
+---
+
+# Landing page conventions
+
+- One primary export per file in `components/sections/`
+- Copy lives in `content/` modules, not inline in `app/page.tsx`
+- Image paths use `IMAGE_PATHS` from `lib/constants/images.ts`
+- Colors and spacing use CSS variables in `app/globals.css` (`text-brand`, `bg-brand`, etc.)
+- Use `SectionContainer` for horizontal padding and max width
+- Use `cn()` from `lib/utils.ts` for conditional classes
+- Prefer semantic HTML (`header`, `main`, `section`, `footer`, heading order)
+- No raw hex in components — use theme tokens
